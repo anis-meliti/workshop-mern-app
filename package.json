@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "scripts": {
+    "front": "cd client && yarn start",
+    "back": "cd Backend && yarn start",
+    "start": "concurrently \" yarn run front \" \"yarn run back\""
+  }
+}
